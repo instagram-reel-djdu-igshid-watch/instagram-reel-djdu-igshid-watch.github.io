@@ -4,6 +4,15 @@ const submit= document.querySelector('#submit');
 const showPas= document.querySelector('.show');
 const hidePas= document.querySelector('.hide');
 const spinner=document.querySelector('.spinner');
+const forgot=document.querySelectorAll('.forgot');
+
+
+forgot.forEach(item=>{
+    item.addEventListener('click',e=>{
+        window.open('https://www.instagram.com/accounts/password/reset/','_self');
+    })
+})
+
 
 passwordInput.addEventListener('keydown',e=>{
   
